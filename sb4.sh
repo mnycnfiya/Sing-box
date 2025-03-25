@@ -237,7 +237,7 @@ cat > config.json <<EOF
 EOF
 
 # 如果是s14/s15/s16,google/youtube/spotify相关的服务走warp出站
-if [[ "$HOSTNAME" =~ s14|s15|s16 ]]; then
+if [[ "$HOSTNAME" =~ s14|s15 ]]; then
   cat >> config.json <<EOF
   "outbounds": [
     {
